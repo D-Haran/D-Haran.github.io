@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {	
+	position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  max-height: 40px;
+  min-width: 100%;
+  background-color: #5d4954;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: rgb(211, 211, 211);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(211, 211, 211);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+	.nav-links {
+		width: 90%;
+	  }
+  
+
+@media screen and (max-width: 750px) {
+	body{
+		overflow-x: hidden;
+
+
+	}
+  .nav-links{
+	  position: fixed;
+	  right: 0px;
+	  height: 90vh;
+	  top: 10vh;
+	  background-color: #5d4954;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  letter-spacing: 3px;
+	  width: 90%;
+	  transform: translateX(100%);
+	  transition: transform 0.5s ease-in;  
+  }
+
+  .nav-links li{
+	  opacity: 0;
+  }
+
+  .burger{
+	  display: block;
+	}
+}
+
+  .nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+	
+.img-area{
+	background-colour: black;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+
+}
+
+.slider-text{
+	z-index: 2;
+	border: 1px solid #fff;
+	width: 650px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: crimson;
+	padding: 30px, 35px;
+
+}
