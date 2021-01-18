@@ -1,0 +1,101 @@
+@font-face {
+  font-family: spotify;
+  src: url(lineto-circular-black.ttf);
+}
+
+body {
+  margin: 0;
+  color: rgb(128, 98, 0);
+  background-image: linear-gradient(#ffbe79, #ffbe79 10%, #75bed6 40%, #75bed6);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+* {
+  font-family: spotify;
+}
+
+.gsc-results-wrapper-nooverlay {
+  display: none !important;
+}
+
+#results {
+  text-align: center;
+}
+
+#connect-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: white;
+}
+
+#connect-container h1 {
+  font-size: 40px;
+  margin-top: 60px;
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 500px;
+  font-size: 20px;
+  padding: 11px 32px 9px;
+  min-width: 160px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  border: 3px solid #1db954;
+  background-color: #1db954;
+  color: white;
+}
+
+.btn-secondary {
+  border: 3px solid black;
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (orientation: landscape) {
+  #search-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  iframe {
+    width: 95% !important;
+    height: 400px !important;
+  }
+  p {
+    margin: 7px 5px !important;
+  }
+  .btn {
+    width: 80%;
+  }
+}
+
+p {
+  margin: 7px 130px;
+}
+
+iframe {
+  background-color: #eee;
+}
+
+input {
+  background: none !important;
+  text-indent: 0 !important;
+}
