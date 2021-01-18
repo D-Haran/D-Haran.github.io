@@ -5,7 +5,7 @@ var spotify = true;
 window.onload = function() {
   var inputField = document.getElementById("gsc-i-id1");
   inputField.setAttribute("placeholder", "What Lyrics do you Have in Mind?");
-  inputField.setAttribute("class", "input");
+  inputField.setAttribute("class", "search");
 
   if (/#access_token\=.+/.test(location.href)) {
     document.getElementById("connect-container").style.display = "none";
