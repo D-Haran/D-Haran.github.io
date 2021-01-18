@@ -78,7 +78,7 @@ function updateResults() {
             resultsContainer.innerHTML = `Your song seems to be <a target="_blank" href="${link}"><u><b>${text}</b></u></a>, but we couldn't find it on Spotify :(`;
           }
         } else {
-          alert("Your Spotify session has timed out. Please log in again.");
+          alert("Your Spotify session has timed out.");
         }
       }
     } else if (!spotify && allGood) {
