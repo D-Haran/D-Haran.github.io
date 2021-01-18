@@ -1,17 +1,13 @@
-@font-face {
-  font-family: spotify;
-  src: url(lineto-circular-black.ttf);
-}
-
 body {
   margin: 0;
+  height: 100vh;
   color: rgb(128, 98, 0);
   background-image: linear-gradient(#ffbe79, #ffbe79 10%, #75bed6 40%, #75bed6);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 * {
-  font-family: spotify;
+  font-family: sans-serif;
 }
 
 .gsc-results-wrapper-nooverlay {
@@ -29,17 +25,25 @@ body {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background-color: white;
+  background-image: linear-gradient(#ffbe79, #ffbe79 10%, #75bed6 40%, #75bed6);
+
 }
 
 #connect-container h1 {
   font-size: 40px;
   margin-top: 60px;
   text-transform: uppercase;
+  
+}
+#connect-container p {
+  font-size: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  
 }
 
 .btn {
-  border-radius: 500px;
+  border-radius: 50px;
   font-size: 20px;
   padding: 11px 32px 9px;
   min-width: 160px;
@@ -49,10 +53,16 @@ body {
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
+  justify-content: space-between;
 }
 
 .btn:focus {
   outline: none;
+}
+.btn:hover {
+  outline: none;
+  font-size: 21px;
+  transition: all 0.2s ease;
 }
 
 .btn-primary {
@@ -63,7 +73,7 @@ body {
 
 .btn-secondary {
   border: 3px solid black;
-  background-color: white;
+  background-color:  #f0d9c0;
   color: black;
 }
 
