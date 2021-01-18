@@ -1,6 +1,6 @@
 var resultsContainer = document.querySelector("#results");
 var accessToken = "";
-var spotify = true;
+
 
 
 
@@ -30,15 +30,6 @@ window.onload = function() {
       },3000)
     }
   }
-}
-
-function connectSpotify() {
-  window.open("https://accounts.spotify.com/authorize?client_id=1ef967355e974276ac8b3c14ef511e36&redirect_uri=http%3A%2F%2F127.0.0.1:5500/LyricFind_ThetaHacks/SPEECH2Text.html&scope=user-read-private%20user-read-email&response_type=token&show_dialog=true","_blank");
-}
-
-function continueWithoutSpotify() {
-  document.getElementById("connect-container").style.display = "none";
-  spotify = false;
 }
 
 
