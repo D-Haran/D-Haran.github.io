@@ -63,18 +63,18 @@ window.onload = function () {
     })
     console.log(speech)
 
-    document.querySelector(".btn-start").addEventListener("click", function listen() {
+    document.querySelector(".btn-start").addEventListener("click", () =>{
         speech.init();
     })
-    document.querySelector(".btn-end").addEventListener("click", function listenstop() {
+    document.querySelector(".btn-end").addEventListener("click", () => {
         speech.stop();
     })
 }
 </script>
     
     
-    <button class="btn-start" onclick="listen()">Start Search By Voice</button>
-    <button class="btn-end" onclick="listenstop()">End Search By Voice</button>
+    <button class="btn-start">Start Search By Voice</button>
+    <button class="btn-end">End Search By Voice</button>
     <textarea class="output" id="output" placeholder="Copy and Paste Text in to search bar"></textarea>
     
     <link rel="stylesheet" href="style.css">
