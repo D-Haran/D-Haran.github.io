@@ -109,3 +109,6 @@ input {
   background: none !important;
   text-indent: 0 !important;
 }
+.search {
+  border-radius: 20px;
+}
