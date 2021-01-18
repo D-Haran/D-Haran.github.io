@@ -71,7 +71,7 @@ window.onload = function() {
 }
 
 function connectSpotify() {
-  window.open("http://accounts.spotify.com/authorize?client_id=1ef967355e974276ac8b3c14ef511e36&redirect_uri=http%3A%2F%2Fd-haran.github.io&scope=user-read-private%20user-read-email&response_type=token&show_dialog=true","_blank");
+  window.open("http://accounts.spotify.com/authorize?client_id=1ef967355e974276ac8b3c14ef511e36&redirect_uri=https%3A%2F%2Fd-haran.github.io&scope=user-read-private%20user-read-email&response_type=token&show_dialog=true","_blank");
 }
 
 function continueWithoutSpotify() {
